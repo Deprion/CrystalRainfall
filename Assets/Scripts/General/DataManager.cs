@@ -17,9 +17,18 @@ public class DataManager : MonoBehaviour
 
     public class PlayerData
     {
+        public string Username = "";
         public int StrengthCrystal = 0;
         public int AgilityCrystal = 0;
         public int EnduranceCrystal = 0;
+    }
+    public string GetUsername()
+    {
+        return Data.Username;
+    }
+    public int GetScore()
+    {
+        return Data.StrengthCrystal + Data.AgilityCrystal + Data.EnduranceCrystal;
     }
     private void LoadData()
     {
